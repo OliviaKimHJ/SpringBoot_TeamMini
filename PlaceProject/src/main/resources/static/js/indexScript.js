@@ -22,7 +22,7 @@ for (let i = 0; i < promotionCard.length; i++) {
 						<img src="${`/img/${promotionCard[i].name}.jpg`}" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">${promotionCard[i].memo}</h5>
-							<a href="${url[i]}" class="btn btn-outline-dark btn-sm card-inner-url">홈페이지 가기</a>
+							<a href="${url[i]}" target="_blank" class="btn btn-outline-dark btn-sm card-inner-url">홈페이지 가기</a>
 						</div>
 					  </div>`;
 	

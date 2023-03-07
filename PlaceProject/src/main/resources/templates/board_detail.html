@@ -7,16 +7,23 @@
    
     <div class="card my-3">
         <div class="card-body">
-         <div class="card-text">코스</div>
-         <div class="nameBox" th:each="p : ${pcode}">
-            <input class="pcode" type="hidden" th:value="${p.pCode}">
-            <input class="pName m-3" type="text" th:value="${p.placeName}" readonly>
-            <input class="lat" type="hidden" th:value="${p.latitude}">
-            <input class="lng" type="hidden" th:value="${p.longitude}">
-         </div>
-         <div id="map" style="width:100%;height:350px;"></div>
-         <hr>
-            <div class="card-text" th:text="${board.content}"}></div>
+         <div class="card-text title-text"><h3>코스</h3></div>
+           <div class="nameBoxP">
+              <div class="mx-1 nameBox" style="width: 350px;" th:each="p : ${pcode}">
+                 <input class="pcode" type="hidden" th:value="${p.pCode}">
+                 <input class="pName m-3 form-control text-center" type="text" th:value="${p.placeName}" readonly>
+                 <input class="lat" type="hidden" th:value="${p.latitude}">
+                 <input class="lng" type="hidden" th:value="${p.longitude}">
+              </div>
+           </div>
+	      <div class="detail_con">
+	         <span class="detail_con1">
+	                 <div class="card-text" th:text="${board.content}"}></div>
+	         </span>
+	           <span class="detail_con2">
+	               <div id="map" style="width:100%;height:350px;"></div>
+	           </span>
+	      </div>
             <div class="d-flex justify-content-end">
                 <div th:if="${board.modifyDate != null}"  class="badge bg-light text-dark p-2 text-start">
                <div>수정일자</div>

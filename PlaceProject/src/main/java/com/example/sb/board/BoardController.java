@@ -52,7 +52,6 @@ public class BoardController {
 		int end = start + (pageNum_cnt - 1);
 
 		// -1 추가함
-//     int count = boardService.getBoardListCount().intValue() - 1;
 		int count = (int) paging.getTotalElements() - 1;
 
 		// if추가함 마지막블럭이 상황에 따라 중간에 끝나야함
@@ -111,29 +110,6 @@ public class BoardController {
    public String detail(Model model, @PathVariable("bCode") Long bCode, CommForm commForm) {
       BoardEntity be = boardService.getBoard(bCode);
       boardService.updateVisit(bCode);
-
-      /*
-      SearchPlace pcode1 = searchPlaceRepository.findBypCode(be.getPCode1());
-      SearchPlace pcode2 = null;
-      if(be.getPCode2() != null)
-         pcode2 = searchPlaceRepository.findBypCode(be.getPCode2());
-      SearchPlace pcode3 = null;
-      if(be.getPCode3() != null)
-         pcode3 = searchPlaceRepository.findBypCode(be.getPCode3());
-      
-      
-      List<SearchPlace> pcode = new ArrayList<>();
-      
-      pcode.add(pcode1);
-      if(be.getPCode2() != null)
-         pcode.add(pcode2);
-      if(be.getPCode3() != null)
-         pcode.add(pcode3);   
-      
-      System.out.println(pcode1.getPlaceName());
-      System.out.println(pcode1.getLongitude());
-      System.out.println(pcode1.getLatitude());
-      */
       
       /******************************************/
       
@@ -182,16 +158,14 @@ public class BoardController {
             pcode.add(s);
          }
       }
+       model.addAttribute("p", pcode);
       */
       
-		/*
-		 * boardForm.setPcode1(boardEntity.getPCode1());
-		 * boardForm.setPcode2(boardEntity.getPCode2());
-		 * boardForm.setPcode3(boardEntity.getPCode3());
-		 */
-      
-      // model.addAttribute("p", pcode);
-      
+     
+     boardForm.setPcode1(boardEntity.getPCode1());
+ 	 boardForm.setPcode2(boardEntity.getPCode2());
+ 	 boardForm.setPcode3(boardEntity.getPCode3());
+ 	 
       if(boardEntity.getPCode1() != null) {
     	  SearchPlace p1 = searchPlaceRepository.findBypCode(boardForm.getPcode1());
     	  model.addAttribute("p1", p1);
@@ -201,12 +175,11 @@ public class BoardController {
     	  SearchPlace p2 = searchPlaceRepository.findBypCode(boardForm.getPcode2());
     	  model.addAttribute("p2", p2);
       }
-      
       if(boardEntity.getPCode3() != null) {
     	  SearchPlace p3 = searchPlaceRepository.findBypCode(boardForm.getPcode3());
     	  model.addAttribute("p3", p3);
       }
-      
+ 	
      
       return "modify_form";
    }

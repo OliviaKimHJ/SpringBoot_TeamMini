@@ -11366,3 +11366,7 @@ textarea.form-control-lg {
 .card-inner-url{
 	float: right;
 }
+
+.logo-img img{
+   width: 50px;
+}
