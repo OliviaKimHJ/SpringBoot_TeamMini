@@ -7,7 +7,6 @@ import com.example.sb.comm.CommEntity;
 import com.example.sb.user.UserEntity;
 
 import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -30,8 +29,6 @@ public class BoardEntity {
    private Long bCode;
    
    private String title;
-   
-   @Column(length = 2000)
    private String content;
    private LocalDateTime createDate;
    
