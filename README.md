@@ -27,22 +27,37 @@
 
 
 **메인화면**   
-<img src="https://user-images.githubusercontent.com/119272364/223056611-338159d8-8d73-49b1-a196-081c0be0f9cb.png" width="550px" height="350px">
+<img src="https://user-images.githubusercontent.com/119272364/223597619-bf42e3e1-a5d8-4d4d-9513-7f22efc62dbc.png" width="550px" height="350px">
 
 **회원가입 폼**   
 <img src="https://user-images.githubusercontent.com/119272364/223056728-a5f6abcd-78a0-4b73-805c-a515e93c22b7.png" width="550px" height="350px">
 
+**중복된 아이디로 가입시 유효성 검사**   
+<img src="https://user-images.githubusercontent.com/119272364/223591740-4f74d4b6-3dbe-4910-87c0-0202e7627d4c.png" width="550px" height="350px">
+
+**게시판 폼**   
+<img src="https://user-images.githubusercontent.com/119272364/223592236-605b66ed-eea8-487d-a1f7-b5050e34119a.png" width="550px" height="350px">
+
 **로그인 폼**   
-<img src="https://user-images.githubusercontent.com/119272364/223056806-e1625158-6908-40c0-ba6f-e7354761d957.png" width="550px" height="350px">
+<img src="https://user-images.githubusercontent.com/119272364/223591955-d8901c50-1824-478a-8914-71da4a9a14c1.png" width="550px" height="350px">
 
 **게시판_디테일**   
-<img src="https://user-images.githubusercontent.com/119272364/223056902-0f8b5e2b-ac34-43d6-8212-f803a804d81e.png" width="550px" height="350px">
+<img src="https://user-images.githubusercontent.com/119272364/223592482-d949056d-8566-4692-a538-ae4604bd6d4f.png" width="550px" height="350px">
 
 **게시판_댓글**   
-<img src="https://user-images.githubusercontent.com/119272364/223056981-e71397ab-a8b4-4d8c-a86d-b1c60f0fb6ba.png" width="550px" height="350px">
+<img src="https://user-images.githubusercontent.com/119272364/223592819-1cab8b69-11e8-4158-b73d-4fbedac98258.png" width="550px" height="350px">
 
 **글쓰기 폼**   
-<img src="https://user-images.githubusercontent.com/119272364/223057117-6116cca3-53d8-431e-a225-6b88e4553b5f.png" width="550px" height="350px">
+<img src="https://user-images.githubusercontent.com/119272364/223593035-6804190e-e14b-4880-847e-bdf6e7b70966.png" width="550px" height="350px">
 
 **글쓰기_지역선택**   
-<img src="https://user-images.githubusercontent.com/119272364/223057219-873dc71c-e8c6-413a-82ae-1c62f327f474.png" width="550px" height="350px">
+<img src="https://user-images.githubusercontent.com/119272364/223593229-8eed3fa2-6790-483d-9790-df6c45745b55.png" width="550px" height="350px">
+
+**추천순 조회순**   
+<img src="https://user-images.githubusercontent.com/119272364/223594945-d62e0c62-8792-4841-bd86-382043b1dae0.png" width="550px" height="350px">
+
+**검색**   
+<img src="https://user-images.githubusercontent.com/119272364/223595008-68d51f76-4e73-4941-b7bb-67975a582ecf.png">
+
+**회원수정**   
+<img src="https://user-images.githubusercontent.com/119272364/223595073-73f64166-2929-4c56-9a41-3330a1e4854a.png" width="550px" height="350px">
