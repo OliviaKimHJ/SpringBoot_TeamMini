@@ -13,13 +13,16 @@
 	         <a th:href="@{/searchPlace/searchMap}" class="btn btn-dark btn-write" onclick="window.open(this.href, '_blank', 'width=1200px, height=700px'); return false;">코스추가</a><br><br>
 			<div class="row">
 				<div class="col-3">
-			     	<input type="text" class="place form-control" th:value="${p1.placeName}" readonly>
+			     	<input type="text" class="place form-control" th:if="${p1 != null}" th:value="${p1.placeName}" readonly>
+			     	<input type="text" class="place form-control" th:unless="${p1}" readonly>
 				</div>
 				<div class="col-3">
-				 	<input type="text" class="place form-control" th:if="${p2 != null}" th:value="${p2.placeName}" readonly> 
+				 	<input type="text" class="place form-control"  th:if="${p2 != null}" th:value="${p2.placeName}" readonly>
+				 	<input type="text" class="place form-control" th:unless="${p2}" readonly>
 			    </div>
 			    <div class="col-3">
 			     	<input type="text" class="place form-control" th:if="${p3 != null}" th:value="${p3.placeName}" readonly>
+			     	<input type="text" class="place form-control" th:unless="${p3}" readonly>
 	         	</div>
 	         </div>
 	         <br>

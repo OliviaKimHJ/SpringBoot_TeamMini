@@ -387,11 +387,12 @@ $('.choose').on('click', function(){
 
 	 			if($('.placeName').eq(i).val() != '') {
 	         		$('.place', opener.document).eq(i).val($('.placeName').eq(i).val());
-//	         		$('.latitude', opener.document).eq(i).val($('.latitude').eq(i).val());
-//	         		$('.longitude', opener.document).eq(i).val($('.longitude').eq(i).val());
 	         		$('.pcode', opener.document).eq(i).val(data[j]);
 	         		j++;
-	         	}
+	         	} else {
+					$('.place', opener.document).eq(i).val('');
+	         		$('.pcode', opener.document).eq(i).val('');
+				 }
 	         }
 			window.close();
 		}

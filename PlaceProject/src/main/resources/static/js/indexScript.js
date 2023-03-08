@@ -28,3 +28,13 @@ for (let i = 0; i < promotionCard.length; i++) {
 	
 	$('.p-cards').append(card);
 };
+
+const topBtn = document.querySelector('.top-btn');
+
+topBtn.onclick = () =>{
+   window.scrollTo({
+	   top : 0, 
+   	   left : 0, 
+   	   behavior : 'smooth'
+   	   });
+}
